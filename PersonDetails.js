@@ -1,24 +1,28 @@
 import React from 'react';
-import {Image, StyleSheet, Text, View} from 'react-native';
+import { StyleSheet, Text, View, Image,} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    margin: 50,
+    margin: 20,
+    backgroundColor: 'aliceblue',
   },
   user: {
+    marginTop: 20,
     fontSize: 15,
     height: 40,
     padding: 10,
-    textAlign: 'left',
+    fontWeight: "bold",
+    textAlign: 'center',
   },
-  image: {
-    width: '100%',
-    height: '50%',
+  image:{
+    width:'100%',
+    height:'50%',
+    marginTop: 20,
   },
 });
 
-const Details = ({route, navigation}) => {
+const PersonDetails = ({route, navigation}) => {
   const {user} = route.params;
 
   return (
@@ -32,4 +36,4 @@ const Details = ({route, navigation}) => {
   );
 };
 
-export default Details;
+export default PersonDetails;
